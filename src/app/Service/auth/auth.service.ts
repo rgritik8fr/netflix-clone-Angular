@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import {
   getAuth,
   signInWithPopup,
@@ -16,6 +17,7 @@ export class AuthService {
   auth: any = getAuth();
   user: any;
   logedIN: boolean = false;
+
 
   constructor(private router: Router) {}
 
