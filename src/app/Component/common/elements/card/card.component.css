@@ -1,0 +1,38 @@
+.parent-card{
+    overflow: hidden;
+    transition: .5s ease;
+}
+.movie-card {
+    height: 300px;
+    border-radius: 9px;
+    transition: .5s ease;
+    position: relative;
+    
+}
+.parent-card:hover{
+    transform: scale(1.1);
+}
+
+.movie-card img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-details{
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    background:
+    LINEAR-GRADIENT(-90DEG,
+    #E50914, #221F1F);
+    transition: .3s ease;
+}
+
+.parent-card:hover .card-details{
+    bottom: 0;
+}
+
+a{
+    color:#fff
+}

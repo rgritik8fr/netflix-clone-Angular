@@ -1,0 +1,13 @@
+<section class="cat-section">
+  <div class="container-fluid">
+    <div class="row py-3 my-3">
+      <h3 class="is-size-26 is-font-wight-700">{{ title }}</h3>
+
+      <div class="d-flex justify-content-around py-3">
+        <div class="" *ngFor="let data of getDataCard() | slice: 0:8">
+          <app-card [getImgSrc]="data"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

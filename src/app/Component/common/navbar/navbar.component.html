@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark  side-padding">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="#"><img [src]="logo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="ms-auto d-flex">
+            <button class="nav-button1">English</button>
+
+            <button class="nav-button2 ms-4" (click)="signIn()" *ngIf = "!logedIN">Sign in</button>
+            <div class="dropdown dropdownv2" *ngIf = "logedIN">
+              <button class="btn  dropdown-toggle nav-button2 ms-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                {{user}}
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1 ms-4">
+                <li><a class="dropdown-item"  routerLink="/authhome">Movie</a></li>
+                <li><a class="dropdown-item" href="#" (click)="Logout()">LogOut</a></li>
+               
+              </ul>
+            </div>
+        </div>
+         
+      </div>
+    </div>
+  </nav>

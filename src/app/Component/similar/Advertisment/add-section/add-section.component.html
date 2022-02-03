@@ -1,0 +1,24 @@
+<div class="section-border">
+    <div class="container">
+        <div class="row  side-padding-50 flex-center add-details"[ngClass] ="getReverseCol()">
+            <div class="col-6">
+                <h1 class="parent-heading">Enjoy on your TV.</h1>
+                <h5 class="is-size-26 pt-3">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h5>
+            </div>
+            <div class="col-6" *ngIf="videoShowing">
+               <div class="position-relative">
+                   <img [src]="src" alt=""  class="z-index-100">
+                   <video  [src]="videoSrc" autoplay loop class="postion-video"></video>
+                </div>
+            </div>
+
+
+            <div class="col-6" *ngIf="!videoShowing">
+                <div class="position-relative">
+                    <img [src]="src" alt="">
+                 </div>
+             </div>
+         </div>
+        </div>
+    
+</div>

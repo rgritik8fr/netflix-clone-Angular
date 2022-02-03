@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { MovieService } from './Service/movie.service';
+import { ALL_DATA } from './json/files';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Al';
+  faq :any = []; 
+
+  constructor(private movieData:MovieService){
+    this.movieData.getData().subscribe((data)=>{
+      
+    })
+    
+  }
+
+
 }

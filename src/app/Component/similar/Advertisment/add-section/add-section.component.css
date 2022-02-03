@@ -1,0 +1,14 @@
+.add-details{
+    padding:1rem 0;
+    
+}
+.section-border{
+    border-top: 5px solid #222222;
+}
+.postion-video{
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    width: 465px;
+    z-index: -1;
+}

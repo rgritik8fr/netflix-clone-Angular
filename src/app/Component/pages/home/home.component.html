@@ -1,0 +1,47 @@
+<div class="header">
+    <div class="hero-content flex-center">
+        <div class="content text-center">
+            <h2 class="parent-heading">Unlimited movies, TV </h2>
+            <h2 class="text-center parent-heading">shows and more.</h2>
+            <h4 class="text-center">Watch anywhere. Cancel anytime.</h4>
+            <h5  class="text-center py-4">Ready to watch? Enter your email to create or restart your membership.</h5>
+
+            <div class="flex-center">
+                <app-input-select [type]="'searchBar'"></app-input-select>
+                <app-buttons [type]="'big-btn'" [value]="'search'"></app-buttons>
+            </div>
+
+        </div>
+    
+    </div>
+</div>
+
+<section>
+      <app-add-section [src]="tvimg" [videoSrc]="tvvideo" [videoShowing]="videoShowing"></app-add-section>
+      <app-add-section [src]="avengergirl"  [reverseCol]="true"></app-add-section>
+      <app-add-section [src]="rajma"  [videoShowing]="videoShowing"></app-add-section>
+      <app-add-section [src]="children"  [reverseCol]="true"></app-add-section>
+
+</section>
+
+<section class="side-padding py-5 px-5">
+    <div class="container">
+        <h2 class="text-center py-5 is-size-56 is-font-wight-700">Frequently Asked Questions</h2>
+
+    <div class="Accodation px-5 mx-5" *ngFor ="let data of faqdata" >
+        <app-accodation [accTitle]="data.title" [accDescription]="data.dis"></app-accodation>
+    </div>
+    </div>
+</section>
+
+
+<section class="side-padding py-2">
+    <div class="container">
+        <h5  class="text-center py-4">Ready to watch? Enter your email to create or restart your membership.</h5>
+
+        <div class="flex-center my-3">
+            <app-input-select [type]="'searchBar'"></app-input-select>
+            <app-buttons [type]="'big-btn'" [value]="'search'"></app-buttons>
+        </div>
+    </div>
+</section>

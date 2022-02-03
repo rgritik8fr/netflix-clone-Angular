@@ -1,0 +1,7 @@
+.bg-black {
+    background-color: #303030;
+}
+
+.acc .accordion-button::after{
+    background-image: unset !important;
+}

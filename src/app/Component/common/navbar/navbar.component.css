@@ -1,0 +1,30 @@
+.navbar-brand img{
+    width: 10rem;
+    margin-top: -0.5rem;
+    padding-bottom:1rem;
+}
+.nav-button1{
+    padding: 0.4rem 2rem;
+    background: transparent;
+    border: .5px solid #fff;
+    color:#fff;
+    border-radius: 5px;
+}
+
+.nav-button2{
+    padding: 0.5rem 2.2rem;
+    background: red;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdownv2  ul {
+    background: #000 !important;
+    color: #fff !important;
+    left:26px !important
+}
+
+.dropdownv2  ul li a{
+    color: #fff !important;
+}
